@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+}
+#cards-box {
+    position: relative;
+    top: 10vh;
+    /* border: 3px solid red; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    width: 90%;
+    margin: 60px auto;
+    font-family: "Kanit", sans-serif;
+}
+
+.cards {
+    padding: 20px;
+    /* border: 2px solid rgb(0, 255, 119); */
+    height: max-content;
+}
+
+.cards p {
+    height: max-content;
+    /* border: 2px solid blue; */
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(240, 240, 240, 0.37);
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    color: rgb(75 85 99);
+}
+.cards-person{
+    display: flex;
+    /* border: 2px solid blue; */
+    align-items: center;
+    padding:5px  15px;
+}
+/* .cards-person-info{
+    border: 2px solid black;
+} */
+.cards-person img{
+    /* border: 2px solid yellow; */
+    margin-right: 15px;
+    border-radius: 50%;
+}
+.name-info{
+  display: block;
+  /* border: 2px solid purple; */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.profession-info{
+    display: block;
+    /* border: 2px solid burlywood; */
+}
+
+@media screen and (max-width:1024px) {
+    #cards-box {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+}
+
+@media screen and (max-width:650px) {
+    #cards-box {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+}
+
+@media screen and (max-width:250px) {
+    #cards-box {
+        margin: 0px;
+        margin-top: 60px;
+    }
+    
+}

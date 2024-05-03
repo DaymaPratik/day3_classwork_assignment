@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+#second-main-sect {
+    margin: 60px 0px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    /* border: 2px solid red; */
+    top: 10vh;
+    height: 90vh;
+    justify-content: center;
+    font-family: "Kanit", sans-serif;
+}
+
+#second-main-left {
+    width: 45%;
+    /* border: 2px solid black; */
+    align-content: center;
+    position: relative;
+}
+
+#second-main-left img {
+    position: relative;
+    width: 100%;
+    /* border: 2px solid blue; */
+    height: 85%;
+    left: 40px;
+}
+
+#second-main-rigth {
+    color: rgb(55 65 81);
+    width: 50%;
+    /* border: 2px solid yellow; */
+    padding-left: 60px;
+    align-content: center;
+    background: rgb(240 240 240 / 55%);
+    border: 1px solid #e5e7eb;
+}
+
+#second-main-rigth h3 {
+    font-size: 33px;
+    margin: 15px 0px;
+}
+
+#second-main-rigth p {
+    font-size: 25px;
+    margin: 15px 0px;
+}
+
+#second-main-rigth button {
+    font-size: 17px;
+    padding: 8px 15px;
+    background: rgb(79 70 229);
+    color: white;
+    border: none;
+    border-radius: 5px;
+   transition: 0.1s ease-in;
+}
+#second-main-rigth button:hover{
+    filter: brightness(85%);
+    cursor: pointer;
+   
+}
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    #second-main-sect {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #second-main-left {
+        height: 50%;
+        width: 90%;
+    }
+
+    #second-main-left img {
+        height: 100%;
+        width: 100%;
+        left: 0px;
+    }
+
+    #second-main-rigth {
+        height: 50%;
+        width: 90%;
+    }
+
+    #second-main-rigth {
+        padding: 20px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:768px) {
+    #second-main-rigth h3 {
+        font-size: 30px;
+
+    }
+
+    #second-main-rigth p {
+        font-size: 17px;
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width:470px) {
+    #second-main-sect {
+        height: fit-content;
+    }
+    #second-main-rigth {
+        height: fit-content;
+        padding: 10px;
+    }
+
+    #second-main-rigth h3 {
+        font-size: 23px;
+
+    }
+
+    #second-main-rigth p {
+        font-size: 15px;
+    }
+
+
+}
